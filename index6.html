@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+        
+        html,body{
+            height: 100%;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        #par{
+            height: 100%;
+            width: 100%;
+            background:radial-gradient(white,red)
+            
+            
+            
+        }
+        #ch{
+            height: 80%;
+            width: 40%;
+            margin: auto;
+            border-radius: 8px;
+            background-color: aliceblue;
+        }.first{
+            width: 95%;
+            padding-left: 5px;
+            margin-left: 5px;
+        }.sec{
+            width:95%;
+            margin-left: 2.5px;
+            height: 10%;
+        }.se{
+            width: 95%;
+            margin-left: 2.5px;
+
+        }.eee{
+            color: red;
+        }.required::after{
+             content: "*";
+             color: red;
+        }button{
+            border: 1px solid;
+            color: aliceblue;
+            background-color:mediumseagreen;
+            border-radius: 3px;
+            margin-left: 40%;
+
+        }
+            
+    </style>
+</head>
+<body>
+    <div id="par">
+        <h1><b>Feedback Form</b></h1>
+        <div id="ch">
+           <p><b>Feedback Type:</b></p>
+           <select class="first" name="Compliment" id="Compl">
+            <option value="Compliment">Compliment</option>
+           </select>
+           <p><b>Message:</b></p>
+           <input class="sec" type="text">
+           <p><b>Website Rating:</b></p>
+           <input type="radio" id="Excellent" name="Rating">
+           <label for="Excellent">Excellent</label>
+           <input type="radio" id="choice" name="Rating">
+           <label for="choice">Good</label>
+           <input type="radio" name="Rating" id="choice1">
+           <label for="choice1">Average</label>
+           <input type="radio" name="Rating" id="choice2">
+           <label for="choice2">Poor</label>
+         <p><b>Age(10-100):</b></p>
+         <input class="se" type="text">
+         <p class="required"><b>Email</b>:</p>
+         <input class="se" type="text">
+         <p><b>Password (min 8 characters):</b></p>
+         <input class="se" type="text">
+    <p><b>Website URL (optional):</b></p>
+    <input class="se" type="text">
+    <input type="radio" id="last" name="select">
+    <label for="last"><b style="font-size: small;">I agree to the terms and conditions</b></label>
+     <br/> 
+     
+        <button>Submit</button>
+
+    
+          
+        </div>
+    </div>
+</body>
+</html>
